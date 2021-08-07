@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Arek\\Desktop\\baryt\\img\\logo.svg":[["logo.f1d8a4c6.svg","img/logo.svg"],"img/logo.svg"],"C:\\Users\\Arek\\Desktop\\baryt\\img\\logo-white.svg":[["logo-white.664df323.svg","img/logo-white.svg"],"img/logo-white.svg"],"C:\\Users\\Arek\\Desktop\\baryt\\img\\szkic-20.jpg":[["szkic-20.05316f25.jpg","img/szkic-20.jpg"],"img/szkic-20.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\hp\\Desktop\\baryt\\img\\logo.svg":[["logo.f1d8a4c6.svg","img/logo.svg"],"img/logo.svg"],"C:\\Users\\hp\\Desktop\\baryt\\img\\logo-white.svg":[["logo-white.664df323.svg","img/logo-white.svg"],"img/logo-white.svg"],"C:\\Users\\hp\\Desktop\\baryt\\img\\szkic-20.jpg":[["szkic-20.05316f25.jpg","img/szkic-20.jpg"],"img/szkic-20.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52783" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54513" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -3,8 +3,10 @@ import slide from "./menu";
 import handleSubmit from "./form";
 import { options, observer, show } from "./observer";
 import { gsap } from "gsap";
-import { LightGallery } from "lightgallery/lightgallery";
+import lightGallery from "lightgallery";
 
+
+const gallery = document.getElementById('lightgallery');
 const burger = document.querySelector(".hamburger");
 const menu = document.querySelectorAll('.accordion__title');
 const links = document.querySelectorAll('.navigation__item-link');
@@ -14,7 +16,7 @@ burger.addEventListener('click', open);
 form.addEventListener('submit', handleSubmit);
 menu.forEach(item => item.addEventListener('click', slide ));
 links.forEach(link => link.addEventListener('click', hideMenu));    
-
+lightGallery(gallery);
 
 const tl = gsap.timeline();
 
