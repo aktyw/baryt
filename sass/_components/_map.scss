@@ -1,0 +1,29 @@
+@use '../_abstracts/index' as *;
+
+.map {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform .5s;
+
+    &__container {
+        overflow: hidden;
+        height: 500px;
+        margin: $space-xxl 0;
+    }
+
+    &:hover {
+        transform: scale(1.07);
+    }
+}
+
+@include tablet {
+    .map {
+        height: 600px;
+        &__container {
+            margin: $space-xxxl 0;
+        }
+    }
+
+}

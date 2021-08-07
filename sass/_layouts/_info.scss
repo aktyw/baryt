@@ -1,0 +1,52 @@
+@use '../_abstracts/index' as *;
+
+.info {
+    &__title {
+        text-transform: capitalize;
+    }
+
+    &__container {
+        padding: 0 0 $space-s 0;
+
+        &--phone {
+            display: flex;
+        }
+    }
+
+    &__container > div:first-child {
+        padding-right: $space-m;
+    }
+
+    &__link {
+        color: color(darkgolds);
+        transition: color .3s;
+
+        &:hover {
+            color: color(golds);
+        }
+    }
+
+}
+
+@include tablet {
+    .info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@include ipad-pro {
+    .info {
+
+        &__name {
+            max-width: 500px;
+        }
+    }
+}
+
+@include desktop {
+    .info {
+    }
+}
+

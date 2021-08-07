@@ -1,0 +1,18 @@
+@use '../_abstracts/index' as *;
+
+.header {
+    position: relative;
+    height: 550px;
+    height: 100vh;
+    max-height: 700px;
+    margin-bottom: $space-xl;
+}
+
+@include laptop {
+    .header {
+        // all:unset;
+        height: 100vh;
+        max-height: 1000px;
+    }
+}
+

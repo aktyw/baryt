@@ -1,0 +1,56 @@
+@use '../_abstracts/index' as *;
+
+.top-info {
+    position: static;
+    top: 0;
+    height: 40px;
+    z-index: 100;
+    width: 100%;
+    background-color: color(sands);
+
+    &__container {
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        width: 100%;
+        
+        & span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__social {
+        margin: 0 auto;
+
+        &:hover i {
+            color: color(darks);
+            opacity: 70%;
+        }
+    }
+
+    &__link {
+        color: color(darks);
+        transition: color .3s;
+        margin-right: $space-m;
+
+        &:hover, &:hover i {
+            color: color(darks);
+            opacity: 70%;
+
+        }
+    }
+}
+
+.icon-small {
+    display: block;
+    font-size: 18px;
+    margin: 0 $space-xs;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: color(darks);
+    transition: color .3s;
+    
+}

@@ -1,0 +1,40 @@
+@use '../_abstracts/index' as *;
+
+.menu { 
+    position: relative;
+
+    &__title {
+        margin-bottom: $space-xl;
+    }
+
+    &__subtitle {
+        padding: $space-m 0;
+        font-weight: normal;    
+        text-align: center;
+    }
+}
+
+@include tablet {
+    .menu { 
+    
+        &__title {
+            margin-bottom: $space-xxxl;
+        }
+
+        &__subtitle {
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

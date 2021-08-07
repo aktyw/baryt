@@ -1,0 +1,118 @@
+@use '../_abstracts/index' as *;
+
+.footer {
+    background-color: color(darks);
+    color: color(whites);
+    padding: $space-xl 0;
+
+    &__container {
+        padding: $space-xl 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__info-link {
+        color: color(golds);
+        transition: color .3s;
+        &:hover {
+            color: color(darkgolds);
+        }
+    }
+
+    &__nav-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        list-style: none;
+    }
+
+    &__nav-link {
+        color: color(golds);
+        transition: color .3s;
+
+        &:hover {
+            color: color(darkgolds);
+        }
+
+        &--fb {
+            color: color(golds);
+        }
+    }
+
+    &__phone {
+        padding: 0;
+    }
+}
+
+.text {
+    padding: $space-xl 0;
+
+    &__title {
+        padding: $space-xs 0;
+    }
+
+    &__content {
+        padding-bottom: $space-xs;
+    }
+
+    &__link {
+        color: color(golds);
+        transition: color .3s;
+
+        &:hover {
+            color: color(darkgolds);
+        }
+    }
+}
+
+.copyright {
+    padding-top: $space-xl;
+    text-align: center;
+
+    &__content {
+        @include fluid-font (1vw, 12px, 14px, 12px);
+        font-weight: lighter;
+    }
+}
+
+@include tablet {
+    .footer {
+        padding: $space-l 0;
+    
+        &__container {
+            padding: $space-xxl 0;
+            display: grid;
+            grid-template-columns: 5fr 4fr 2fr;
+            gap: $space-m;
+            align-items: flex-end;
+        }
+    
+        &__nav-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        &__nav-item {
+            margin: 0 $space-s;
+        }
+    }
+
+    .text {
+        padding: 0;
+    }
+}
+
+@include ipad-pro {
+    .footer {
+        &__container {
+            padding: $space-xxl 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: $space-m;
+            align-items: flex-end;
+        }
+    }
+}

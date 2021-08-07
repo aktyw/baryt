@@ -1,0 +1,33 @@
+@use '../_abstracts/index' as *;    
+
+.prompt {
+    width: 100%;
+    margin-top: $space-l;
+    padding: $space-l 0;
+    background-color: color(darksands);
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__info {
+        display: none;
+        @include fluid-font (1.5vw, 36px, 42px, 42px);
+        font-family: $font-primary;
+        text-transform: none;
+    }
+}
+
+@include ipad-pro {
+    .prompt {
+        margin-top: $space-xxxl;
+        padding: $space-xxl 0;
+
+        &__info {
+            display: block;
+        }
+    }
+}

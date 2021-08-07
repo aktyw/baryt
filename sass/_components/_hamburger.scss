@@ -1,0 +1,34 @@
+
+@use '../_abstracts' as *;
+
+$hamburger-types: (collapse);
+$hamburger-padding-x           : 8px;
+$hamburger-padding-y           : 4px;
+$hamburger-layer-width         : 24px;
+$hamburger-layer-height        : 2px;
+$hamburger-layer-spacing       : 5px;
+$hamburger-layer-color         : color(darks);
+$hamburger-hover-opacity       : 1;
+
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
+.hamburger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px color(darks) solid;
+    z-index: 75;
+    margin-left: auto;
+
+    &__name {
+        text-transform: uppercase;
+        padding-right: $space-xxs;
+        @include fluid-font (3vw, 22px, 22px, 22px);
+    }
+}
+
+@include tablet {
+    .hamburger {
+        display: none;
+    }
+}

@@ -1,0 +1,119 @@
+@use '../_abstracts/index' as *;
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+
+    &__image-container {
+        padding-bottom: $space-l;
+    }
+
+    &__image-wrapper {
+        position: relative;
+    }
+
+    &__image {
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__image-decoration {
+        display: none;
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 100%;
+        height: 100%;
+        background-color: color(darksands);
+        z-index: -1;
+    }
+
+    &__title {
+        position: relative;
+        @include fluid-font (4.5vw, 36px, 42px, 42px);
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+
+    &__info {
+        padding-top: $space-m;
+    }
+
+    &__icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding-top: $space-m;
+    }
+
+    &__icons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__icon {
+        margin: 0 auto;
+        font-size: 36px;
+        margin-top: $space-s;
+    }
+
+    &__icon-description {
+        @include fluid-font (1.5vw, 16px, 20px, 20px);
+        display: inline-block;
+        padding: $space-xs 0;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+
+@include ipad-pro {
+    .showcase {
+        flex-direction: row;
+        padding-top: $space-l;
+
+        &__image-container {
+            flex: 1;
+            margin-top: $space-s;
+            padding: 0 $space-m;
+        }
+
+        &__content {
+            flex: 1;
+            padding: 0 $space-m;
+        }
+
+        &__image {
+            height: 650px;
+        }
+
+        &__image-decoration {
+            display: block;
+        }
+
+        &__info {
+            padding-top: $space-xl;
+        }
+
+        &__icons {
+            margin-top: $space-xl;
+            gap: 36px;
+        }
+
+        &__icon {
+            font-size: 48px;
+        }
+    }
+}
+
+@include laptop {
+    .showcase {
+        &__image-container {
+            padding: 0 $space-xxl;
+        }
+        &__content {
+            padding: 0 $space-xxl;
+        }
+    }
+}

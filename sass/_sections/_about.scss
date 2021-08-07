@@ -1,0 +1,20 @@
+@use '../_abstracts/index' as *;
+
+@media (max-width: #{$mobile-width}) {
+    .wrapper--about-us {
+        padding: 0;
+    }
+}
+
+.about {
+    position: relative;
+    margin-top: $space-xxxl;
+    padding-bottom: 250px;
+}
+
+
+
+
+
+
+

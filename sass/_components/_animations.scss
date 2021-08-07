@@ -1,0 +1,31 @@
+@use '../_abstracts/index' as *;
+
+.fade {
+    transform: translateY(60px);
+    opacity: 0;
+    transition: transform 1.2s, opacity 1s;
+
+    &__titles {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    &__indexes {
+        z-index: 1;
+    }
+}
+
+.in-view {
+    transform: none;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.btn__show {
+    opacity: 0;
+}
+
+.btn__none {
+    opacity: 0;
+    pointer-events: none;
+}

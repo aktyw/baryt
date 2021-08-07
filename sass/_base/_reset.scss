@@ -1,0 +1,36 @@
+@use '../_abstracts' as *;
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: $navi;
+    -webkit-tap-highlight-color: rgba($color: #efe4c8, $alpha: 0.3);
+}
+
+body {
+  background-color: color(sands);
+  color: color(darks);
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+// ACCESSIBILITY
+
+@media screen and (prefers-reduced-motion: reduce) {  
+    * {
+      /* Very short durations means JavaScript that relies on events still works */
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }

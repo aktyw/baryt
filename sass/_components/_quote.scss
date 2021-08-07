@@ -1,0 +1,19 @@
+@use '../_abstracts/index' as *;
+
+// .quote {
+//     color: color(lights);
+//     margin: $space-l 0;
+//     margin: 0 auto;
+//     text-align: center;
+//     font-style: italic;
+//     height: 500px;
+//     opacity: 50%;
+//     position: absolute;
+
+//     &__content {
+//         display: inline-block;
+//         @include fluid-font (5vw, 120px, 120px, 48px);
+//         line-height: 8rem;
+//         font-weight: bold;
+//     }
+// }

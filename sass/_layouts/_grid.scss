@@ -1,0 +1,84 @@
+@use '../_abstracts/index' as *;
+
+.grid {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(3, 34vw);
+        place-items: center;
+        gap: 2px;
+        padding: 2px;
+    }
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s, filter .2s;
+    
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(110%);
+    }
+
+    &__container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@include tablet {
+    .grid {
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat (7, 1fr );
+            
+            gap: 8px;
+            padding: 8px;
+        }
+    }
+
+    #one {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    #two {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    #three {
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+
+    #four {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #five {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #six {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+
+    #seven {
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+    #eight {
+        grid-column: 3 / 4;
+        grid-row: 3;
+    }
+}

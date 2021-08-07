@@ -1,0 +1,78 @@
+@use '../_abstracts/index' as *;
+
+.accordion {
+    list-style: none;
+    margin-bottom: $space-xl;
+
+    &__item {
+        border-top: 2px solid color(lightsands);
+    }
+
+    &__item:last-child {
+        border-bottom: 2px solid color(lightsands);
+    }
+
+    &__title {
+        position: relative;
+        @include fluid-font (3vw, 22px, 24px, 22px);
+        text-transform: none;
+        font-weight: normal;
+        text-align: center;
+        height: 70px;
+        line-height: 70px;
+        cursor: pointer;
+        transition: background-color .6s;
+        will-change: background-color;
+
+
+        &:hover,&:focus {
+            background-color: color(lightsands);
+            transition: background-color .3s;
+        }
+    }
+
+    &__option {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    &__suboption {
+        text-transform: lowercase;
+        @include fluid-font (1vw, 14px, 16px, 16px);
+
+        &--add {
+            text-transform: none;
+        }
+
+        &--drinks {
+            @include fluid-font (1vw, 16px, 20px, 18px);
+            text-transform: none;
+        }
+    }
+
+    &__container {
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        will-change: max-height, background-color;
+        transition: max-height .6s cubic-bezier(0, 0.55, 0.45, 1), background-color ease-out 1.5s;
+        padding: 0 $space-xs;
+    }
+}
+
+.active {
+    height: auto;
+    max-height: 5000px;
+    background-color: color(lightsands);
+    transition: max-height 1.8s ease-out, background-color ease-out .3s;
+}
+
+.highlighted {
+    background-color: color(lightsands);
+}
+
+@include tablet {
+    .accordion {
+        margin-bottom: $space-xxxl;
+    }
+}

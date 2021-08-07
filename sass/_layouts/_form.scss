@@ -1,0 +1,165 @@
+@use '../_abstracts/index' as *;
+
+.status {
+    position: absolute;
+    bottom: 16px;
+    padding: 0 $space-xs;
+    background-color: color(sands);
+    color:color(darks);
+    transition: opacity .2s;
+}
+
+.show {
+    background-color: color(lights);
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $space-xl 0 $space-xxxl 0;
+
+    &__input {
+        @include fluid-font (1vw, 16px, 16px, 16px);
+        height: 40px;
+        width: 90%;
+        min-width: 250px;
+        max-height: 250px;
+        padding: $space-xxs;
+        margin: $space-xxs 0;
+        border: none;
+        border-bottom: 2px solid color(golds);
+        font-family: inherit;
+        background-color: color(lights);
+        resize: vertical;
+
+        &:valid + span::before {
+            content: '✓';
+            position: relative;
+            margin-left: $space-xs;
+            font-size: 18px;
+            color: color(greens);
+        }
+
+        &:focus {
+            border-bottom: none;
+            outline-color: color(golds);
+            background-color: color(whites);
+        }
+    }
+
+    &__title {
+        margin-bottom: $space-l;
+        text-align: center;
+    }
+
+    &__info {
+        position: relative;
+        padding: $space-m ;
+        margin: 0 auto;
+        background-color: color(darksands);
+        transition: background-color .3s;
+        isolation: isolate;
+    }
+
+    &__info-icon {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 48px;
+        color: color(sands);
+        z-index: -1;
+    }
+
+    &__disclaimer {
+        width: 100%;
+        padding: $space-xs 0;
+        line-height: 1.4;
+        @include fluid-font (1vw, 12px, 13px, 12px);
+    }
+
+    &__label {
+        cursor: pointer;
+    }
+
+    &__question {
+        overflow: hidden;
+    }
+
+    &__submit {
+        width: 150px;
+        height: 45px;
+        margin: $space-s 0;
+        border: none;
+        letter-spacing: 2px;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: color(whites);
+        background-color: color(darks);
+        transition: background-color .3s, color .3s;
+        cursor: pointer;
+
+        &:focus {
+            outline-color: color(golds);
+        }
+
+        &[value] {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (hover: hover) {
+    .form {
+        &__submit {
+            &:hover {
+                @include btn-color(color(darkgolds), color(lights));
+            }
+        }
+    }
+}
+
+@include tablet {
+    .form {
+
+        &__submit {
+            width: 165px;
+        }
+
+        &__info {
+            width: 75%;
+        }
+
+        &__input {
+            width: 100%;
+
+            &:valid + span::before {
+                position: absolute;
+                padding-top: 10px;
+                left: -31px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .form {
+
+        &__info {
+            padding: $space-xxl ;
+            margin-top: $space-xxl;
+            margin-bottom: $space-s;
+            width: 60%;
+        }
+        &__input {
+            &:valid + span::before {
+                left: -45px;
+                font-size: 22px;
+            }
+        }
+    }
+}

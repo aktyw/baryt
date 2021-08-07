@@ -1,0 +1,20 @@
+// COLORS 
+
+@function color($key) {
+    @return map-get($colors, $key);
+  }
+
+$colors: (
+  'greens': #44813C,
+  'whites': #ffffff,
+  'lights': #fefaec,
+  'lightsands': #F4ECD6,
+  'sands': #efe4c8,
+  'darksands': #E2D2B0,
+  'golds': #d4be82,
+  'darkgolds': #A8945B,
+  'browns': #8e4b29,
+  'darks': #3a3831
+);
+
+//name cannot be the same as default css colors !

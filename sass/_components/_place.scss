@@ -1,0 +1,134 @@
+@use '../_abstracts/index' as *;
+
+.place {
+        position: relative;
+        margin-bottom: $space-xxl;
+
+        &__one {
+        }
+
+        &__two {
+        }
+
+    &__box {
+        position: relative;
+        background-color: color(darksands);
+        padding: $space-m;
+        max-width: 500px;
+        width: 85%;
+        z-index: 10;
+
+        &--one {
+            bottom: 100px;
+            margin-left: auto;
+        }
+
+        &--two {
+            bottom: 100px;
+            margin-right: auto;
+        }
+    }
+
+    &__content {
+        padding-bottom: $space-xs;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: $space-s;
+        font-family: $font-secondary;
+        @include fluid-font (3vw, 36px, 42px, 28px);
+    }
+    
+    &__image {
+        position: relative;
+        object-fit: cover;
+        height: 400px;
+        width: 85%;
+        
+        &--one {
+            object-position: -125px;
+        }
+
+        &--two {
+            margin-left: auto;
+            bottom: 150px;
+            object-fit: cover;
+        }
+    }
+}
+
+@include tablet {
+
+    .place {
+
+        &__box {
+            padding: $space-m $space-l;
+        }
+
+        &__image {
+            height: 600px;
+            width: 75%;
+            max-width: 600px;
+
+            &--one {
+                
+            }
+    
+            &--two {
+            }
+        }
+    }
+}
+
+@include ipad-pro {
+
+    .place {
+
+        &__box {
+            max-width: 550px;
+            padding: $space-l $space-xl;
+    
+            &--one {
+                bottom: 150px;
+                transform: translateX(-100px);
+            }
+    
+            &--two {
+                bottom: 50px;
+                margin-left: 0;
+                transform: translateX(100px);
+            }
+        }
+
+        &__image {
+            max-width: 600px;
+
+            &--one {
+                // transform: translateX(100px);
+
+                // &:hover {
+                //     transform: translateX(100px);
+                // }
+            }
+    
+            &--two {
+                margin-left: auto;
+                // transform: translateX(-100px);
+            }
+        }
+    }
+}
+
+@include laptop {
+    .place {
+        margin: 0 $space-xl;
+    }
+}
+
+@include desktop {
+    .place {
+        margin: 0 $space-xxxl;
+    }
+}

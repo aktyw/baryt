@@ -1,0 +1,28 @@
+@use '../_abstracts' as *;
+
+.back-to-top {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: color(darkgolds);
+    z-index: 100;
+    transition: background-color .3s, opacity .3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: color(golds);
+    }
+}
+
+@include tablet {
+    .back-to-top {
+        right: 40px;
+        bottom: 40px;
+        width: 60px;
+        height: 60px;
+    }
+}

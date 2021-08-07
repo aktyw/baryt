@@ -1,0 +1,30 @@
+@use '../_abstracts' as *;
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 4px;
+    width: 2px;
+    height: 100px;
+    background-color: color(darks);
+    border-radius: 5px;
+
+    &__left, &__right {
+        display: inline-block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0px;
+        background-color: color(darks);
+    }
+
+    &__left {
+        transform: rotate(-45deg);
+        right: 4px;
+    }
+    &__right {
+        transform: rotate(45deg);
+        left: 4px;
+    }
+}

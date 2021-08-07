@@ -1,0 +1,75 @@
+@use '../_abstracts/index' as *;
+
+.logo {
+    position: relative;
+    top: 30px;
+    width: 80px;
+    height: 80px;
+    display: none;
+    background-image: url('/img/logo.svg');
+
+    &,&__nav,&__footer {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        margin: 0 auto;
+        width: 100%;
+        height: 180px;
+        z-index: 50;
+        background-image: url('/img/logo.svg');
+        background-position: center;
+    }
+
+    &__footer {
+        display: none;
+        height: 260px;
+        width: 100%;
+        justify-self: flex-start;
+        background-image: url('/img/logo-white.svg');
+
+        &--mobile {
+            display: block;
+            height: 180px;
+        }
+    }
+}
+
+@include mobile-small {
+    .logo {
+        &__nav {
+            bottom: 10px;
+            height: 140px;
+        }
+    }
+}
+
+@include tablet {
+    .logo {
+        &__nav {
+            display: none;
+        }
+
+        &__footer {
+            display: block;
+            &--mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@include ipad-pro {
+    .logo {
+        top: 60px;
+        width: 160px;
+        height: 160px;
+    }
+}

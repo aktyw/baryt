@@ -1,0 +1,44 @@
+@use '../_abstracts/index' as *;
+
+.quick {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: color(darks);
+    z-index: 150;
+    transition: opacity .3s;
+
+    & > div {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 85%;
+        max-width: 400px;
+    }
+
+    &__name {
+        color: color(whites);
+    }
+
+    &__link {
+        color: color(golds);
+    }
+
+    
+}
+
+.is-hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@include mobile-small {
+    .quick {
+        & > div {
+            width: 95%;
+        }
+    }
+}
