@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', show);
 const btn = document.querySelector('.back-to-top');
 const footer = document.querySelector('.footer');

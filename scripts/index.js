@@ -1,10 +1,9 @@
 import { open, hideMenu } from "./hamburger";
 import slide from "./menu";
 import handleSubmit from "./form";
-import { options, observer, show } from "./observer";
+import { observer } from "./observer";
 import { gsap } from "gsap";
 import lightGallery from "lightgallery";
-
 
 const gallery = document.getElementById('lightgallery');
 const burger = document.querySelector(".hamburger");
@@ -18,15 +17,14 @@ menu.forEach(item => item.addEventListener('click', slide ));
 links.forEach(link => link.addEventListener('click', hideMenu));    
 lightGallery(gallery);
 
-const tl = gsap.timeline();
-
-
+(function enter() {
+    const tl = gsap.timeline();
     tl.fromTo('.title__span--first', {
         y: '100px'
     }, {
         y: '0px',
         ease: 'Power1.easeInOut',
-        duration: 1,
+        duration: .8,
         autoAlpha: 1
     })
     .fromTo('.title__span--second', {
@@ -34,7 +32,7 @@ const tl = gsap.timeline();
     }, {
         y: '0px',
         ease: 'Power1.easeInOut',
-        duration: 1,
+        duration: .8,
         autoAlpha: 1
     }, "-=.4")
     .fromTo('.textbox__subtitle', {
@@ -50,12 +48,20 @@ const tl = gsap.timeline();
         duration: .5,
         autoAlpha: 1
     },"-=.4")
-    .from('.hero__image', {
-        duration: 1.2,
+    .fromTo('.hero__image', {
+        duration: 2,
         ease: 'Power4.easeInOut',
-        width: 0,
-        autoAlpha: 0
-    },"-=.9")
+        autoAlpha: 0,
+        scale: .1
+    },{
+        autoAlpha: 1,
+        scale: 1
+    },"-=.6")
+    .from('.hero__image', {
+        duration: 1,
+        ease: 'Power4.easeInOut',
+        width: 0
+    },"-=.7")
     .fromTo('.navigation', {
         y: '-50'
     }, {
@@ -83,14 +89,7 @@ const tl = gsap.timeline();
     }, {
         autoAlpha: 1
     });
-
-    // const anime = gsap.timeline(); 
-
-    // anime.fromTo()
-
-
-
-
+})();
 
 
 
