@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel index.html",
     "prebuild": "rm -rf dist",
-    "build": "parcel build index.html --public-url ./ -d docs"
+    "build": "parcel build index.html --public-url ./ -d docs",
+    "build:dist": "parcel build index.html"
   },
   "keywords": [],
   "author": "",

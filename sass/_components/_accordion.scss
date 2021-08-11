@@ -24,7 +24,6 @@
         transition: background-color .6s;
         will-change: background-color;
 
-
         &:hover,&:focus {
             background-color: color(lightsands);
             transition: background-color .3s;
@@ -37,8 +36,8 @@
     }
 
     &__suboption {
-        text-transform: lowercase;
         @include fluid-font (1vw, 14px, 16px, 16px);
+        text-transform: lowercase;
 
         &--add {
             text-transform: none;
@@ -52,11 +51,11 @@
 
     &__container {
         position: relative;
+        padding: 0 $space-xs;
         max-height: 0;
         overflow: hidden;
         will-change: max-height, background-color;
         transition: max-height .6s cubic-bezier(0, 0.55, 0.45, 1), background-color ease-out 1.5s;
-        padding: 0 $space-xs;
     }
 }
 

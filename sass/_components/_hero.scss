@@ -1,10 +1,10 @@
 @use '../_abstracts/index' as *;
 
 .hero {
-    
     &__image {
         position: absolute;
         object-fit: cover;
+        opacity: 0;
         bottom: 0px;
         right: 0;
         height: 380px;
@@ -42,7 +42,6 @@
 
 @include tablet {
     .hero {
-        
         &__image {
             all: unset;
             position: absolute;
@@ -92,7 +91,6 @@
 
 @include desktop {
     .hero {
-
         &__image {
             height: 85vh;
             max-height: 900px;
