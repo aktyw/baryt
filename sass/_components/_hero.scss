@@ -4,12 +4,12 @@
     &__image {
         position: absolute;
         object-fit: cover;
-        opacity: 0;
         bottom: 0px;
         right: 0;
         height: 380px;
         width: 80%;
         z-index: -1;
+        opacity: 0;
     }
 }
 
@@ -44,6 +44,7 @@
     .hero {
         &__image {
             all: unset;
+            opacity: 0;
             position: absolute;
             right: 0;
             bottom: 0;
