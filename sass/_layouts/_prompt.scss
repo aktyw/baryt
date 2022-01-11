@@ -8,16 +8,17 @@
 
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
 
     &__info {
         display: none;
-        @include fluid-font (1.5vw, 36px, 42px, 42px);
+        @include fluid-font (1.5vw, 46px, 46px, 46px);
+        margin: $space-l 0 $space-l 0;
         font-family: $font-primary;
-        text-transform: none;
+        font-variant: small-caps;
     }
 }
 
