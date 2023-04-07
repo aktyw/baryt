@@ -4,6 +4,7 @@
     position: relative;
     height: 550px;
     height: 100vh;
+    height: 100svh;
     max-height: 700px;
     margin-bottom: $space-xl;
 }
@@ -11,6 +12,7 @@
 @include laptop {
     .header {
         height: 100vh;
+        height: 100svh;
         max-height: 1000px;
     }
 }
