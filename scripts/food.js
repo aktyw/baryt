@@ -201,12 +201,15 @@ const menuPizza = [
   },
 ];
 
-const menuPizzaAdditions = [
-  { name: 'Ser', smallPrice: 4, largePrice: 6 },
-  { name: 'Mięsne', smallPrice: 4, largePrice: 6 },
-  { name: 'Wegetariańskie', smallPrice: 6, largePrice: 5 },
-  { name: 'Sosy - czosnkowy, ostry, ketchup', smallPrice: 3, largePrice: 3 },
-];
+const menuPizzaAdditions = {
+  subtitle: 'Dodatki do pizzy',
+  additions: [
+    { name: 'Ser', smallPrice: 4, largePrice: 6 },
+    { name: 'Mięsne', smallPrice: 4, largePrice: 6 },
+    { name: 'Wegetariańskie', smallPrice: 6, largePrice: 5 },
+    { name: 'Sosy - czosnkowy, ostry, ketchup', smallPrice: 3, largePrice: 3 },
+  ],
+};
 
 const menuMainDishes = [
   {
@@ -367,22 +370,176 @@ const menuWings = [
   },
 ];
 
-const menuSetAdditions = [
-  {
-    name: 'Frytki',
-    smallPrice: '',
-    largePrice: 12,
-  },
-  {
-    name: 'Surówki',
-    smallPrice: '',
+const menuSetAdditions = {
+  subtitle: 'Dodatki',
+  additions: [
+    { name: 'Frytki', smallPrice: '', largePrice: 12 },
+    { name: 'Surówki', smallPrice: '', largePrice: 12 },
+    { name: 'Pieczywo', smallPrice: '', largePrice: 6 },
+  ],
+};
 
-    largePrice: 12,
+const menuColdDrinks = {
+  subtitle: 'Zimne',
+  products: [
+    { name: 'Coca-Cola', size: '0,2l', price: '7' },
+    { name: 'Coca-Cola Zero', size: '0,5l', price: '8' },
+    { name: 'Fanta', size: '0,2l', price: '7' },
+    { name: 'Sprite', size: '0,5l', price: '8' },
+    { name: 'Fuzetea Brzoskwinia/Cytryna', size: '0,5l', price: '8' },
+    {
+      name: 'Cappy Pomarańcza',
+      size: '0,33l',
+      price: '8',
+    },
+    {
+      name: 'Cappy Jabłko/Multiwitamina/Truskawka',
+      size: '0,33l',
+      price: '7',
+    },
+    { name: 'Kinley Tonic/Bitter Rose/Mojito', size: '0,2l', price: '7' },
+  ],
+};
+
+const menuHotDrinks = {
+  subtitle: 'Ciepłe',
+  products: [
+    { name: 'Herbata czarna', price: '7' },
+    { name: 'Herbata czarna z cytryną', price: '7' },
+    { name: 'Herbata zielona', price: '7' },
+    { name: 'Herbata owocowa', price: '7' },
+    { name: 'Kawa po turecku', price: '7' },
+    { name: 'Latte macchiato', price: '10' },
+    { name: 'Cappuccino', price: '9' },
+    { name: 'Espresso', price: '9' },
+  ],
+};
+
+const menuDraftBeer = {
+  subtitle: 'Piwo Lane',
+  products: [
+    { name: 'Kozel Lezak', size: '0,5l', price: '10' },
+    { name: 'Tyskie', size: '0,5l', price: '10' },
+  ],
+};
+
+const menuBottledBeer = {
+  subtitle: 'Piwo Butelkowe',
+  products: [
+    { name: 'Tyskie', size: '0,5l', price: '10' },
+    { name: 'Lech Pils', size: '0,5l', price: '10' },
+    { name: 'Lech Premium', size: '0,5l', price: '10' },
+    { name: 'Lech 0 %', size: '0,5l', price: '10' },
+    { name: 'Lech Granat Acai', size: '0,5l', price: '10' },
+    { name: 'Lech Mojito', size: '0,5l', price: '10' },
+    { name: 'Książęce IPA', size: '0,5l', price: '11' },
+    { name: 'Książęce Lager', size: '0,5l', price: '11' },
+    { name: 'Książęce Ciemne Łagodne', size: '0,5l', price: '11' },
+    { name: 'Książęce Cherry ALE', size: '0,5l', price: '11' },
+    { name: 'Kozel Lezak', size: '0,5l', price: '10' },
+    { name: 'Kozel Cerny', size: '0,5l', price: '10' },
+    { name: 'Żubr', size: '0,5l', price: '10' },
+    { name: 'Dębowe', size: '0,5l', price: '10' },
+  ],
+};
+
+const menuVodka = {
+  subtitle: 'Wódka',
+  products: [
+    {
+      name: 'Soplica',
+      sizes: [
+        { size: '50ml', price: '8' },
+        { size: '0,5l', price: '57' },
+      ],
+    },
+    {
+      name: 'Bols',
+      sizes: [
+        { size: '50ml', price: '8' },
+        { size: '0,5l', price: '57' },
+      ],
+    },
+    {
+      name: 'Wyborowa',
+      sizes: [
+        { size: '50ml', price: '8' },
+        { size: '0,5l', price: '57' },
+      ],
+    },
+    {
+      name: 'Finlandia',
+      sizes: [
+        { size: '50ml', price: '9' },
+        { size: '0,5l', price: '67' },
+      ],
+    },
+  ],
+};
+
+const menuWhisky = {
+  subtitle: 'Whisky',
+  products: [
+    {
+      name: 'Red Label',
+      sizes: [
+        { size: '50ml', price: '9' },
+        { size: '0,5l', price: '72' },
+      ],
+    },
+    {
+      name: 'Grants',
+      sizes: [
+        { size: '50ml', price: '9' },
+        { size: '0,5l', price: '72' },
+      ],
+    },
+    {
+      name: 'Ballantines',
+      sizes: [
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '77' },
+      ],
+    },
+  ],
+};
+
+const menuGin = {
+  subtitle: 'Gin',
+  products: [
+    {
+      name: 'Lubuski',
+      sizes: [
+        { size: '50ml', price: '8' },
+        { size: '0,5l', price: '57' },
+      ],
+    },
+    {
+      name: 'Seagrams',
+      sizes: [
+        { size: '50ml', price: '9' },
+        { size: '0,5l', price: '67' },
+      ],
+    },
+  ],
+};
+
+const menuLocations = [
+  {
+    name: 'Boguszów, Krakowskie Osiedle',
+    price: '5 PLN',
   },
   {
-    name: 'Pieczywo',
-    smallPrice: '',
-    largePrice: 6,
+    name: 'Gorce, Kuźnice, Stary Lesieniec',
+    price: '6 PLN',
+  },
+  {
+    name: 'Sobięcin, Czarny Bór, Jabłów',
+    price: '7 PLN',
+  },
+  {
+    name: 'Witków, Borówno, Grzędy, Unisław Śląski',
+    price: '10 PLN',
   },
 ];
 
@@ -393,6 +550,8 @@ const containerMenuSalad = document.getElementById('menu-salad');
 const containerMenuSet = document.getElementById('menu-set');
 const containerMenuStrips = document.getElementById('menu-strips');
 const containerMenuWings = document.getElementById('menu-wings');
+const containerMenuDrinks = document.getElementById('menu-drinks');
+const containerMenuDelivery = document.getElementById('menu-delivery');
 
 const typeClassMap = {
   vege: 'product__type--green',
@@ -426,45 +585,125 @@ const renderProduct = (container, items) => {
   });
 };
 
-const renderSubtitleAndAdditions = (container, subtitleText, additions) => {
-  const subtitle = document.createElement('li');
-  subtitle.className = 'product__subtitle';
-  subtitle.textContent = subtitleText;
-  container.appendChild(subtitle);
+const renderDrinkProduct = (container, drinkCategory) => {
+  const { subtitle, products } = drinkCategory;
+
+  const subtitleElement = document.createElement('li');
+  subtitleElement.classList.add('product__subtitle');
+  subtitleElement.textContent = subtitle;
+  container.appendChild(subtitleElement);
+
+  products.forEach((product) => {
+    const productElement = document.createElement('li');
+    productElement.classList.add('product');
+
+    productElement.innerHTML = `
+      <div class="name__container">
+          <p class="accordion__suboption accordion__suboption--drinks">${product.name}</p>
+      </div>
+      <div class="price__container">
+          <p class="price">${product.price}</p>
+      </div>
+    `;
+
+    container.appendChild(productElement);
+  });
+};
+
+const renderAltDrinkProduct = (container, drinkCategory) => {
+  const { subtitle, products } = drinkCategory;
+
+  const subtitleElement = document.createElement('li');
+  subtitleElement.classList.add('product__subtitle');
+  subtitleElement.textContent = subtitle;
+  container.appendChild(subtitleElement);
+
+  products.forEach((product) => {
+    const productElement = document.createElement('li');
+    productElement.classList.add('product');
+
+    const priceHTML = product.sizes
+      .map(
+        (sizeObj) =>
+          `<p class="price">${sizeObj.size}</p><p class="price">${sizeObj.price}</p>`
+      )
+      .join('');
+
+    productElement.innerHTML = `
+      <div class="name__container">
+        <p class="accordion__suboption accordion__suboption--drinks">${product.name}</p>
+      </div>
+      <div class="price__container price__container--drinks">
+        ${priceHTML}
+      </div>
+    `;
+
+    container.appendChild(productElement);
+  });
+};
+
+const renderSubtitleAndAdditions = (container, menu) => {
+  const { subtitle, additions } = menu;
+
+  const subtitleElement = document.createElement('li');
+  subtitleElement.className = 'product__subtitle';
+  subtitleElement.textContent = subtitle;
+  container.appendChild(subtitleElement);
 
   additions.forEach((item) => {
     const li = document.createElement('li');
     li.className = 'product';
 
     li.innerHTML = `
-        <div class="name__container">
-          <p class="accordion__suboption accordion__suboption--drinks">${
-            item.name
-          }</p>
-        </div>
-        <div class="price__container">
-          <p class="price">${item.smallPrice}</p>
-          ${item.largePrice ? `<p class="price">${item.largePrice}</p>` : ''}
-        </div>
-      `;
+      <div class="name__container">
+        <p class="accordion__suboption accordion__suboption--drinks">${
+          item.name
+        }</p>
+      </div>
+      <div class="price__container">
+        ${item.smallPrice ? `<p class="price">${item.smallPrice} PLN</p>` : ''}
+        <p class="price">${item.largePrice} PLN</p>
+      </div>
+    `;
 
     container.appendChild(li);
   });
 };
 
+const renderLocation = (container, locations) => {
+  locations.forEach((location) => {
+    const locationElement = document.createElement('li');
+    locationElement.classList.add('product');
+
+    locationElement.innerHTML = `
+      <div class="name__container">
+        <p class="accordion__suboption accordion__suboption--drinks">${location.name}</p>
+      </div>
+      <div class="price__container">
+        <p class="price">${location.price}</p>
+      </div>
+    `;
+
+    container.appendChild(locationElement);
+  });
+};
+
 export const renderMenu = () => {
   renderProduct(containerMenuPizza, menuPizza);
-  renderSubtitleAndAdditions(
-    containerMenuPizza,
-    'Dodatki do pizzy',
-    menuPizzaAdditions
-  );
-
+  renderSubtitleAndAdditions(containerMenuPizza, menuPizzaAdditions);
   renderProduct(containerMenuMainDishes, menuMainDishes);
   renderProduct(containerMenuPasta, menuPasta);
   renderProduct(containerMenuSalad, menuSalad);
   renderProduct(containerMenuSet, menuSet);
   renderProduct(containerMenuStrips, menuStrips);
   renderProduct(containerMenuWings, menuWings);
-  renderSubtitleAndAdditions(containerMenuWings, 'Dodatki', menuSetAdditions);
+  renderSubtitleAndAdditions(containerMenuWings, menuSetAdditions);
+  renderDrinkProduct(containerMenuDrinks, menuColdDrinks);
+  renderDrinkProduct(containerMenuDrinks, menuHotDrinks);
+  renderDrinkProduct(containerMenuDrinks, menuDraftBeer);
+  renderDrinkProduct(containerMenuDrinks, menuBottledBeer);
+  renderAltDrinkProduct(containerMenuDrinks, menuVodka);
+  renderAltDrinkProduct(containerMenuDrinks, menuWhisky);
+  renderAltDrinkProduct(containerMenuDrinks, menuGin);
+  renderLocation(containerMenuDelivery, menuLocations);
 };
