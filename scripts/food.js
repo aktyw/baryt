@@ -2,114 +2,114 @@ const menuPizza = [
   {
     name: '1. Margherita',
     description: 'Sos pomidorowy, ser, oregano',
-    smallPrice: 27,
-    largePrice: 42,
+    smallPrice: 30,
+    largePrice: 45,
   },
   {
     name: '2. Fungi',
     description: 'Sos pomidorowy, ser, pieczarki, oregano',
-    smallPrice: 28,
-    largePrice: 43,
+    smallPrice: 31,
+    largePrice: 46,
   },
   {
     name: '3. Salami',
     description: 'Sos pomidorowy, ser, salami, oregano',
-    smallPrice: 30,
-    largePrice: 43,
+    smallPrice: 33,
+    largePrice: 46,
   },
   {
     name: '4. Verona',
     description: 'Sos pomidorowy, ser, szynka, oregano',
-    smallPrice: 30,
-    largePrice: 43,
+    smallPrice: 33,
+    largePrice: 46,
   },
   {
     name: '5. Wianek',
     description:
       'Sos pomidorowy, ser, pieczarki, brokuł, papryka jalapeno, oregano',
-    smallPrice: 32,
-    largePrice: 43,
+    smallPrice: 35,
+    largePrice: 46,
   },
   {
     name: '6. Capricciosa',
     description: 'Sos pomidorowy, ser, szynka, pieczarki, oregano',
-    smallPrice: 32,
-    largePrice: 44,
+    smallPrice: 35,
+    largePrice: 47,
   },
   {
     name: '7. Forno',
     description: 'Sos pomidorowy, ser, salami, pieczarki, oregano',
-    smallPrice: 32,
-    largePrice: 44,
+    smallPrice: 35,
+    largePrice: 47,
   },
   {
     name: '8. Chicken',
     description: 'Sos pomidorowy, ser, gyros, oregano',
-    smallPrice: 31,
-    largePrice: 44,
+    smallPrice: 34,
+    largePrice: 47,
   },
   {
     name: '9. Hawaii',
     description: 'Sos pomidorowy, ser, szynka, ananas, oregano',
-    smallPrice: 32,
-    largePrice: 44,
+    smallPrice: 35,
+    largePrice: 47,
   },
   {
     name: '10. Tropicana',
     description: 'Sos pomidorowy, ser, gyros, ananas, oregano',
-    smallPrice: 32,
-    largePrice: 46,
+    smallPrice: 35,
+    largePrice: 49,
   },
   {
     name: '11. Pestacore',
     description: 'Sos pomidorowy, ser, tuńczyk, pieczarki, oregano',
-    smallPrice: 33,
-    largePrice: 46,
+    smallPrice: 37,
+    largePrice: 50,
   },
   {
     name: '12. Cztery pory roku',
     description:
       'Sos pomidorowy, ser, <sup>1</sup>&frasl;<sub>4</sub> brokuł, <sup>1</sup>&frasl;<sub>4</sub> pomidor, <sup>1</sup>&frasl;<sub>4</sub> salami, <sup>1</sup>&frasl;<sub>4</sub> tuńczyk, oregano',
-    smallPrice: 34,
-    largePrice: 46,
+    smallPrice: 37,
+    largePrice: 50,
   },
   {
     name: '13. Sergio',
     description:
       'Sos pomidorowy, ser, salami, papryka kolorowa, oliwki, kukurydza',
-    smallPrice: 34,
-    largePrice: 47,
+    smallPrice: 37,
+    largePrice: 50,
   },
   {
     name: '14. Trio Fromaggi',
     description: 'Sos pomidorowy, ser, ser favita, gorgonzola, oregano',
-    smallPrice: 34,
-    largePrice: 48,
+    smallPrice: 37,
+    largePrice: 51,
   },
   {
     name: '15. Spinacci',
     description:
       'Sos pomidorowy, ser, szpinak, ser favita, cebula czerwona, czosnek, oregano',
-    smallPrice: 34,
-    largePrice: 48,
+    smallPrice: 37,
+    largePrice: 51,
   },
   {
     name: '16. Romana',
     description: 'Sos pomidorowy, ser szynka, gyros, pieczarki, oregano',
-    smallPrice: 34,
-    largePrice: 48,
+    smallPrice: 37,
+    largePrice: 51,
   },
   {
     name: '17. Frutti Di Mare',
     description: 'Sos pomidorowy, ser, mix owoców morza, czosnek, oregano',
-    smallPrice: 34,
-    largePrice: 48,
+    smallPrice: 37,
+    largePrice: 51,
   },
   {
     name: '18. Mafiozo',
     description: 'Sos pomidorowy, ser, salami, papryczki jalapeno, oregano',
-    smallPrice: 34,
-    largePrice: 48,
+    smallPrice: 37,
+    largePrice: 51,
     typeClass: 'product__type--red',
     type: 'ostra',
   },
@@ -117,8 +117,8 @@ const menuPizza = [
     name: '19. Diabolo',
     description:
       'Sos pomidorowy, ser, szynka, pieczarki, papryczki jalapeno, oregano',
-    smallPrice: 34,
-    largePrice: 48,
+    smallPrice: 37,
+    largePrice: 51,
     typeClass: 'product__type--red',
     type: 'ostra',
   },
@@ -126,8 +126,8 @@ const menuPizza = [
     name: '20. Calzone',
     description:
       'Sos pomidorowy, ser, pieczarki, gyros, cebula czerwona, oregano',
-    smallPrice: 36,
-    largePrice: 48,
+    smallPrice: 39,
+    largePrice: 51,
     typeClass: 'product__type--brown',
     type: 'pieróg',
   },
@@ -135,69 +135,69 @@ const menuPizza = [
     name: '21. Grecka',
     description:
       'Sos pomidorowy, ser, szynka, oliwki czarne, papryka kolorowa, ser favita, oregano',
-    smallPrice: 36,
-    largePrice: 48,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '22. Wiosenna',
     description:
       'Sos pomidorowy, ser, szynka, brokuł, kukurydza, cebula czerwona, papryka kolorowa, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '23. Wegetariana',
     description:
       'Sos pomidorowy, ser, pomidor, brokuł, kukurydza, pieczarki, cebula czerwona, papryka kolorowa, oregano',
-    smallPrice: 36,
-    largePrice: 49,
+    smallPrice: 39,
+    largePrice: 52,
   },
   {
     name: '24. Wiejska',
     description:
       'Sos pomidorowy, ser, salami, boczek, pieczarki, ogórek konserwowy, cebula czerwona, oregano',
-    smallPrice: 35,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '25. Rukola',
     description: 'Sos pomidorowy, ser, szynka, kurczak, rukola świeża, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '26. Milano',
     description:
       'Sos pomidorowy, ser, pieczarki, boczek, kabanos, cebula biała, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '27. Farmerska',
     description:
       'Sos pomidorowy, ser, pieczarki, boczek, kurczak, cebula biała, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '28. Brocolli',
     description: 'Sos pomidorowy, ser, kurczak, brokuł, kukurydza, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '29. Flamengo',
     description:
       'Sos pomidorowy, ser, kurczak, salami, kukurydza, cebula biała, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
   {
     name: '30. Max Gyros',
     description:
       'Sos pomidorowy, ser, pieczarki, boczek, salami, gyros, papryka kolorowa, oregano',
-    smallPrice: 37,
-    largePrice: 49,
+    smallPrice: 40,
+    largePrice: 52,
   },
 ];
 
@@ -216,7 +216,7 @@ const menuMainDishes = [
     name: 'Zapiekanka jarska',
     description:
       'talarki ziemniaczane, kukurydza, brokuł, pomidor, papryka kolorowa, sos śmietanowy, ser, oregano',
-    price: 31,
+    price: 36,
     type: 'vege',
     typeClass: 'product__type--green',
   },
@@ -224,24 +224,24 @@ const menuMainDishes = [
     name: 'Zapiekanka z boczkiem',
     description:
       'talarki ziemniaczane, boczek, cebula czerwona, papryka kolorowa, sos śmietanowy, ser, oregano',
-    price: 33,
+    price: 38,
   },
   {
     name: 'Zapiekanka gyros',
     description:
       'talarki ziemniaczane, gyros, brokuł, ogórek konserwowy, sos śmietanowy, ser, oregano',
-    price: 34,
+    price: 38,
   },
   {
     name: 'Zapiekanka z kurczakiem',
     description:
       'talarki ziemniaczane, kurczak, brokuł, kukurydza, sos śmietanowy, ser, oregano',
-    price: 34,
+    price: 38,
   },
   {
     name: 'Brokuły zapiekane pod serem',
     description: 'brokuł, ser, ser gorgonzola, sos śmietanowy, oregano',
-    price: 37,
+    price: 40,
   },
 ];
 
@@ -250,19 +250,19 @@ const menuPasta = [
     name: 'Penne z kurczakiem',
     description:
       'kurczak, pomidor, papryka kolorowa, cukinia, czosnek, ser, sos śmietanowy, oregano',
-    price: 32,
+    price: 38,
   },
   {
     name: 'Penne z boczkiem',
     description:
       'boczek cebula czerwona, czosnek, ser, sos śmietanowy, oregano',
-    price: 32,
+    price: 38,
   },
   {
     name: 'Penne wegetariana',
     description:
       'pomidor, brokuł, papryka kolorowa, cebula czerwona, ser, sos śmietanowy, oregano',
-    price: 31,
+    price: 36,
     type: 'vege',
     typeClass: 'product__type--green',
   },
@@ -273,53 +273,33 @@ const menuSalad = [
     name: 'Hawai',
     description:
       'Sok z ananasa, śmietana, sałata lodowa, ananas, szynka, kukurydza, pomidor, ogórek zielony',
-    price: 27,
+    price: 30,
   },
   {
     name: 'Tonno',
     description:
       'Sos winegret, sałata lodowa, tuńczyk, pomidor, ogórek zielony, cebula czerwona, kukurydza',
-    price: 29,
+    price: 35,
   },
   {
     name: 'Grecka',
     description:
       'Sos winegret, sałata lodowa, ser favita, oliwki czarne, pomidor, ogórek zielony, cebula czerwona',
-    price: 33,
+    price: 35,
     type: 'vege',
   },
   {
     name: 'Kurczak',
     description:
       'Sos czosnkowy, sałata lodowa, kurczak, pomidor, ogórek zielony, cebula czerwona, ser',
-    price: 34,
+    price: 38,
   },
 ];
 
 const menuSet = [
   {
-    name: 'Strips',
-    description: 'Stripsy 3 szt., frytki, zestaw surówek',
-    price: 31,
-  },
-  {
-    name: 'Wings',
-    description: 'wings 5 szt., frytki, zestaw surówek',
-    price: 31,
-  },
-  {
-    name: 'Camembert',
-    description: 'ser, frytki, zestaw surówek',
-    price: 31,
-  },
-  {
-    name: 'Pstrąg',
-    description: 'pstrąg, frytki, zestaw surówek',
-    price: 40,
-  },
-  {
-    name: 'Pierś z kurczaka',
-    description: 'pierś z kurczaka, frytki/ziemniaki, zestaw surówek',
+    name: 'Danie dnia',
+    description: '',
     price: 32,
   },
   {
@@ -327,23 +307,63 @@ const menuSet = [
     description: 'kotlet schabowy, frytki/ziemniaki, zestaw surówek',
     price: 34,
   },
+  {
+    name: 'Żeberka',
+    description: 'żeberka, ziemniaki, zestaw surówek',
+    price: 38,
+  },
+  {
+    name: 'Karczek',
+    description: 'karczek, ziemniaki, zestaw surówek',
+    price: 39,
+  },
+  {
+    name: 'Wątróbka drobiowa',
+    description: 'wątróbka drobiowa, ziemniaki, zestaw surówek',
+    price: 33,
+  },
+  {
+    name: 'Camembert',
+    description: 'ser, frytki, zestaw surówek',
+    price: 33,
+  },
+  {
+    name: 'Pstrąg',
+    description: 'pstrąg, frytki, zestaw surówek',
+    price: 45,
+  },
+  {
+    name: 'Pierś z kurczaka',
+    description: 'pierś z kurczaka, frytki/ziemniaki, zestaw surówek',
+    price: 38,
+  },
+  {
+    name: 'Strips',
+    description: 'Stripsy 3 szt., frytki, zestaw surówek',
+    price: 34,
+  },
+  {
+    name: 'Wings',
+    description: 'wings 5 szt., frytki, zestaw surówek',
+    price: 34,
+  },
 ];
 
-const menuStrips = [
+const menuSoups = [
   {
-    name: 'Mały kubeł',
-    description: 'Strips 10 szt., frytki',
-    price: 42,
+    name: 'Zupa dnia',
+    description: '',
+    price: 12,
   },
   {
-    name: 'Średni kubeł',
-    description: 'Strips 15 szt., frytki',
-    price: 56,
+    name: 'Rosół',
+    description: 'W soboty i niedziele',
+    price: 14,
   },
   {
-    name: 'Duży kubeł',
-    description: 'Strips 30 szt., frytki',
-    price: 96,
+    name: 'Gulaszowa',
+    description: 'Z pieczywem',
+    price: 28,
   },
 ];
 
@@ -351,22 +371,40 @@ const menuWings = [
   {
     name: 'Mały kubeł',
     description: 'wings 15 szt., frytki',
-    price: 37,
+    price: 40,
   },
   {
     name: 'Średni kubeł',
     description: 'wings 30 szt., frytki',
-    price: 56,
+    price: 60,
   },
   {
     name: 'Duży kubeł',
     description: 'wings 60 szt., frytki',
-    price: 92,
+    price: 100,
   },
   {
     name: 'Kubeł MIX',
     description: 'strips 10 szt., Wings 15 szt., frytki',
-    price: 62,
+    price: 72,
+  },
+];
+
+const menuStrips = [
+  {
+    name: 'Mały kubeł',
+    description: 'Strips 10 szt., frytki',
+    price: 47,
+  },
+  {
+    name: 'Średni kubeł',
+    description: 'Strips 15 szt., frytki',
+    price: 60,
+  },
+  {
+    name: 'Duży kubeł',
+    description: 'Strips 30 szt., frytki',
+    price: 100,
   },
 ];
 
@@ -376,6 +414,7 @@ const menuSetAdditions = {
     { name: 'Frytki', smallPrice: '', largePrice: 12 },
     { name: 'Surówki', smallPrice: '', largePrice: 12 },
     { name: 'Pieczywo', smallPrice: '', largePrice: 6 },
+    { name: 'Sosy - czosnkowy, ostry, ketchup', smallPrice: '', largePrice: 3 },
   ],
 };
 
@@ -383,8 +422,9 @@ const menuColdDrinks = {
   subtitle: 'Zimne',
   products: [
     { name: 'Coca-Cola', size: '0,2l', price: '7' },
-    { name: 'Coca-Cola Zero', size: '0,5l', price: '8' },
+    { name: 'Coca-Cola/Coca-Cola Zero', size: '0,5l', price: '8' },
     { name: 'Fanta', size: '0,2l', price: '7' },
+    { name: 'Fanta', size: '0,5l', price: '8' },
     { name: 'Sprite', size: '0,5l', price: '8' },
     { name: 'Fuzetea Brzoskwinia/Cytryna', size: '0,5l', price: '8' },
     {
@@ -404,10 +444,10 @@ const menuColdDrinks = {
 const menuHotDrinks = {
   subtitle: 'Ciepłe',
   products: [
-    { name: 'Herbata czarna', price: '7' },
-    { name: 'Herbata czarna z cytryną', price: '7' },
-    { name: 'Herbata zielona', price: '7' },
-    { name: 'Herbata owocowa', price: '7' },
+    { name: 'Herbata czarna', price: '10' },
+    { name: 'Herbata czarna z cytryną', price: '10' },
+    { name: 'Herbata zielona', price: '10' },
+    { name: 'Herbata owocowa', price: '10' },
     { name: 'Kawa po turecku', price: '7' },
     { name: 'Latte macchiato', price: '10' },
     { name: 'Cappuccino', price: '9' },
@@ -418,28 +458,28 @@ const menuHotDrinks = {
 const menuDraftBeer = {
   subtitle: 'Piwo Lane',
   products: [
-    { name: 'Kozel Lezak', size: '0,5l', price: '10' },
-    { name: 'Tyskie', size: '0,5l', price: '10' },
+    { name: 'Kozel Lezak', size: '0,5l', price: '12' },
+    { name: 'Tyskie', size: '0,5l', price: '12' },
   ],
 };
 
 const menuBottledBeer = {
   subtitle: 'Piwo Butelkowe',
   products: [
-    { name: 'Tyskie', size: '0,5l', price: '10' },
-    { name: 'Lech Pils', size: '0,5l', price: '10' },
-    { name: 'Lech Premium', size: '0,5l', price: '10' },
-    { name: 'Lech 0 %', size: '0,5l', price: '10' },
-    { name: 'Lech Granat Acai', size: '0,5l', price: '10' },
-    { name: 'Lech Mojito', size: '0,5l', price: '10' },
-    { name: 'Książęce IPA', size: '0,5l', price: '11' },
-    { name: 'Książęce Lager', size: '0,5l', price: '11' },
-    { name: 'Książęce Ciemne Łagodne', size: '0,5l', price: '11' },
-    { name: 'Książęce Cherry ALE', size: '0,5l', price: '11' },
-    { name: 'Kozel Lezak', size: '0,5l', price: '10' },
-    { name: 'Kozel Cerny', size: '0,5l', price: '10' },
-    { name: 'Żubr', size: '0,5l', price: '10' },
-    { name: 'Dębowe', size: '0,5l', price: '10' },
+    { name: 'Tyskie', size: '0,5l', price: '12' },
+    { name: 'Lech Pils', size: '0,5l', price: '12' },
+    { name: 'Lech Premium', size: '0,5l', price: '12' },
+    { name: 'Lech 0 %', size: '0,5l', price: '12' },
+    { name: 'Lech Granat Acai', size: '0,5l', price: '12' },
+    { name: 'Lech Mojito', size: '0,5l', price: '12' },
+    { name: 'Książęce IPA', size: '0,5l', price: '12' },
+    { name: 'Książęce Lager', size: '0,5l', price: '12' },
+    { name: 'Książęce Ciemne Łagodne', size: '0,5l', price: '12' },
+    { name: 'Książęce Cherry ALE', size: '0,5l', price: '12' },
+    { name: 'Kozel Lezak', size: '0,5l', price: '12' },
+    { name: 'Kozel Cerny', size: '0,5l', price: '12' },
+    { name: 'Żubr', size: '0,5l', price: '12' },
+    { name: 'Dębowe', size: '0,5l', price: '12' },
   ],
 };
 
@@ -449,29 +489,29 @@ const menuVodka = {
     {
       name: 'Soplica',
       sizes: [
-        { size: '50ml', price: '8' },
-        { size: '0,5l', price: '57' },
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '70' },
       ],
     },
     {
       name: 'Bols',
       sizes: [
-        { size: '50ml', price: '8' },
-        { size: '0,5l', price: '57' },
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '70' },
       ],
     },
     {
       name: 'Wyborowa',
       sizes: [
-        { size: '50ml', price: '8' },
-        { size: '0,5l', price: '57' },
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '70' },
       ],
     },
     {
       name: 'Finlandia',
       sizes: [
-        { size: '50ml', price: '9' },
-        { size: '0,5l', price: '67' },
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '80' },
       ],
     },
   ],
@@ -483,22 +523,22 @@ const menuWhisky = {
     {
       name: 'Red Label',
       sizes: [
-        { size: '50ml', price: '9' },
-        { size: '0,5l', price: '72' },
+        { size: '50ml', price: '12' },
+        { size: '0,5l', price: '90' },
       ],
     },
     {
       name: 'Grants',
       sizes: [
-        { size: '50ml', price: '9' },
-        { size: '0,5l', price: '72' },
+        { size: '50ml', price: '12' },
+        { size: '0,5l', price: '90' },
       ],
     },
     {
       name: 'Ballantines',
       sizes: [
-        { size: '50ml', price: '10' },
-        { size: '0,5l', price: '77' },
+        { size: '50ml', price: '12' },
+        { size: '0,5l', price: '90' },
       ],
     },
   ],
@@ -510,15 +550,15 @@ const menuGin = {
     {
       name: 'Lubuski',
       sizes: [
-        { size: '50ml', price: '8' },
-        { size: '0,5l', price: '57' },
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '90' },
       ],
     },
     {
       name: 'Seagrams',
       sizes: [
-        { size: '50ml', price: '9' },
-        { size: '0,5l', price: '67' },
+        { size: '50ml', price: '10' },
+        { size: '0,5l', price: '90' },
       ],
     },
   ],
@@ -548,6 +588,7 @@ const containerMenuMainDishes = document.getElementById('menu-main-dishes');
 const containerMenuPasta = document.getElementById('menu-pasta');
 const containerMenuSalad = document.getElementById('menu-salad');
 const containerMenuSet = document.getElementById('menu-set');
+const containerMenuSoup = document.getElementById('menu-soup');
 const containerMenuStrips = document.getElementById('menu-strips');
 const containerMenuWings = document.getElementById('menu-wings');
 const containerMenuDrinks = document.getElementById('menu-drinks');
@@ -661,8 +702,8 @@ const renderSubtitleAndAdditions = (container, menu) => {
         }</p>
       </div>
       <div class="price__container">
-        ${item.smallPrice ? `<p class="price">${item.smallPrice} PLN</p>` : ''}
-        <p class="price">${item.largePrice} PLN</p>
+        ${item.smallPrice ? `<p class="price">${item.smallPrice}</p>` : ''}
+        <p class="price">${item.largePrice}</p>
       </div>
     `;
 
@@ -695,6 +736,7 @@ export const renderMenu = () => {
   renderProduct(containerMenuPasta, menuPasta);
   renderProduct(containerMenuSalad, menuSalad);
   renderProduct(containerMenuSet, menuSet);
+  renderProduct(containerMenuSoup, menuSoups);
   renderProduct(containerMenuStrips, menuStrips);
   renderProduct(containerMenuWings, menuWings);
   renderSubtitleAndAdditions(containerMenuWings, menuSetAdditions);
