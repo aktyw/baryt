@@ -26,7 +26,7 @@ links.forEach((link) => link.addEventListener('click', hideMenu));
     {
       y: '0px',
       ease: 'Power1.easeInOut',
-      duration: 0.8,
+      duration: 0.5,
       autoAlpha: 1,
     }
   )
@@ -38,10 +38,10 @@ links.forEach((link) => link.addEventListener('click', hideMenu));
       {
         y: '0px',
         ease: 'Power1.easeInOut',
-        duration: 0.8,
+        duration: 0.5,
         autoAlpha: 1,
       },
-      '-=.4'
+      '-=.3'
     )
     .fromTo(
       '.textbox__subtitle',
@@ -52,18 +52,18 @@ links.forEach((link) => link.addEventListener('click', hideMenu));
       {
         autoAlpha: 1,
         y: '0px',
-        duration: 0.8,
+        duration: 0.5,
       },
-      '-=.4'
+      '-=.3'
     )
     .to(
       '.btn__show',
       {
         opacity: 1,
-        duration: 0.5,
+        duration: 0.4,
         autoAlpha: 1,
       },
-      '-=.4'
+      '-=.3'
     )
     .fromTo(
       '.hero__image',
@@ -71,22 +71,22 @@ links.forEach((link) => link.addEventListener('click', hideMenu));
         duration: 2,
         ease: 'Power4.easeInOut',
         autoAlpha: 0,
-        scale: 0.1,
+        scale: 0.2,
       },
       {
         autoAlpha: 1,
         scale: 1,
       },
-      '-=.6'
+      '-=.3'
     )
     .from(
       '.hero__image',
       {
-        duration: 1,
+        duration: 1.4,
         ease: 'Power4.easeInOut',
         width: 0,
       },
-      '-=.7'
+      '-=.9'
     )
     .fromTo(
       '.navigation',
@@ -96,10 +96,10 @@ links.forEach((link) => link.addEventListener('click', hideMenu));
       {
         opacity: 1,
         y: 0,
-        duration: 0.5,
+        duration: 0.4,
         autoAlpha: 1,
       },
-      '-=.7'
+      '-=.6'
     )
     .to(
       ['.arrow__left', '.arrow__right'],
@@ -131,7 +131,8 @@ links.forEach((link) => link.addEventListener('click', hideMenu));
       },
       {
         autoAlpha: 1,
-      }
+      },
+      '-=.5'
     );
 })();
 
