@@ -569,10 +569,10 @@ const renderProduct = (container, items) => {
     product.innerHTML = `
         <div class="name__container">
           <h4 class="accordion__option">${item.name} ${
-      typeClass
-        ? `<span class="product__type ${typeClass}">${item.type}</span>`
-        : ''
-    }</h4>
+            typeClass
+              ? `<span class="product__type ${typeClass}">${item.type}</span>`
+              : ''
+          }</h4>
           <p class="accordion__suboption">${item.description}</p>
         </div>
         <div class="price__container">
