@@ -305,7 +305,7 @@ const menuSet = [
   {
     name: 'Kotlet schabowy',
     description: 'kotlet schabowy, frytki/ziemniaki, zestaw surówek',
-    price: 34,
+    price: 40,
   },
   {
     name: 'Żeberka',
