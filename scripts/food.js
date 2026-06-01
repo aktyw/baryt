@@ -250,19 +250,19 @@ const menuPasta = [
     name: 'Penne z kurczakiem',
     description:
       'kurczak, pomidor, papryka kolorowa, cukinia, czosnek, ser, sos śmietanowy, oregano',
-    price: 48,
+    price: 45,
   },
   {
     name: 'Penne z boczkiem',
     description:
       'boczek cebula czerwona, czosnek, ser, sos śmietanowy, oregano',
-    price: 48,
+    price: 45,
   },
   {
     name: 'Penne wegetariana',
     description:
       'pomidor, brokuł, papryka kolorowa, cebula czerwona, ser, sos śmietanowy, oregano',
-    price: 46,
+    price: 43,
     type: 'vege',
     typeClass: 'product__type--green',
   },
@@ -330,7 +330,7 @@ const menuSet = [
   {
     name: 'Pstrąg',
     description: 'pstrąg, frytki, zestaw surówek',
-    price: 47,
+    price: 49,
   },
   {
     name: 'Pierś z kurczaka',
